@@ -43,6 +43,7 @@ def main():
 
     st.title("Weather Information")
     st.markdown("Enter the names of cities (comma-separated) to get their current weather information.")
+    st.markdown("Created and maintained by: Abhishek Kumar")
 
     cities_input = st.text_input("Enter city names (comma-separated)")
 
