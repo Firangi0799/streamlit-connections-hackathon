@@ -24,7 +24,7 @@ Streamlit Connections Hackathon is a platform for developers to showcase their c
 
 ## About the Author
 
-This app was created by [Your Name], as a submission for the Streamlit Connections Hackathon. Connect with the author on [LinkedIn/Twitter/GitHub] to explore more exciting projects.
+This app was created by Abhishek Kumar, as a submission for the Streamlit Connections Hackathon. Connect with the author on [Github](https://github.com/Firangi0799/) to explore more exciting projects.
 
 ---
 
