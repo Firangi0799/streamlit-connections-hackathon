@@ -39,6 +39,12 @@ st.markdown(
 )
 
 def main():
+    """
+    The main function to run the weather information web app.
+
+    This function sets up the Streamlit app, connects to the OpenWeatherMap API,
+    and handles user interactions to fetch and display weather data.
+    """
     weather_connection = OpenWeatherMapConnection(connection_name='openweathermap')
 
     st.title("Weather Information")
@@ -56,6 +62,23 @@ def main():
             st.error(f"Error occurred: {e}")
 
 def display_weather_data(weather_data):
+    """
+    Display weather data for each city.
+
+    Args:
+        weather_data (dict): A dictionary containing weather data for each city.
+                             The structure of the dictionary:
+                             {
+                                 "city_name": {
+                                     "weather_description": str,
+                                     "temperature": float,
+                                     "humidity": int,
+                                     "pressure": int,
+                                     "wind_speed": float
+                                 },
+                                 ...
+                             }
+    """
     for city, data in weather_data.items():
         st.markdown(f"### Weather Information for {city}")
         if isinstance(data, str):
